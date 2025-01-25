@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="form" style="text-align: center; margin: 20px auto;">
+        <form action="/update/{{task.id}}" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            <input type="text" name="name" value="{{task.name}}">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</div>
+{% endblock %}

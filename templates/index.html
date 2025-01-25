@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="form" style="text-align: center; margin: 20px auto;">
+        <form action="/" method="POST">
+            <input type="text" name="name" id="name">
+            <input type="submit" value="Add Task">
+        </form>
+    </div>
+
+    {% if tasks|length < 1 %}
+    <h4 style="text-align: center">There are no tasks. Create one above!</h4>
+    {% else %}
+    <table style="margin: 20px auto;">
+        <tr>
+            <th>Name</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td>{{ task.name }}</td>
+                <td>{{ task.created_at.strftime("%Y-%m-%d, %H:%M:%S") }}</td>
+                <td>
+                    <a href="/delete/{{task.id}}">Delete</a> | <a href="/update/{{task.id}}">Update</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</div>
+{% endblock %}
