@@ -1,13 +1,31 @@
-Installation
-- git clone git@github.com:ripan/flasktutorial.git
-- cd flasktutorial
-- pip install virtualenv
-- virtualenv .venv
-- source .venv/bin/activate
-- pip install gunicorn
-- pip install Flask-SQLAlchemy
-- pip install flask
-- pip freeze > requirements.txt
+# Flasktutorial
 
-Run
-- flask run --debug
+> Implement basic CRUD operation in flask
+
+## How To Run
+1. Install `virtualenv`:
+```
+$ pip install virtualenv
+```
+
+2. Open a terminal in the project root directory and run:
+```
+$ virtualenv .venv
+```
+
+3. Then run the command:
+```
+$ source .venv/bin/activate
+```
+
+4. Then install the dependencies:
+```
+$ (.venv) pip install -r requirements.txt
+```
+
+5. Finally start the web server:
+```
+$ (.venv) python app.py
+```
+
+This server will start on port 5000 by default. You can change the port in `app.py`
