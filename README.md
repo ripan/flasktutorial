@@ -3,7 +3,7 @@ Installation
 - cd flasktutorial
 - pip install virtualenv
 - virtualenv .venv
-- source env/bin/activate
+- source .venv/bin/activate
 - pip install gunicorn
 - pip install flask
 - pip freeze > requirements.txt
