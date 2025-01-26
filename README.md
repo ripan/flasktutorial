@@ -28,4 +28,4 @@ $ (.venv) pip install -r requirements.txt
 $ (.venv) python app.py
 ```
 
-This server will start on port 5000 by default. You can change the port in `app.py`
+This server will start on port 5000 by default.
