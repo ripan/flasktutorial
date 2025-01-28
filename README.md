@@ -29,3 +29,19 @@ $ (.venv) python app.py
 ```
 
 This server will start on port 5000 by default.
+
+## How To Deploy
+1. Login `heroku`:
+```
+$ heroku login
+```
+2. Create `heroku` app:
+```
+$ heroku create CUSTOM-APP-NAME
+```
+3. Push the Git repository to this remote to trigger the building and deployment process
+```
+$ git push heroku master
+```
+
+Demo Link: https://flasktutorial-20012025-cfee3b8505e8.herokuapp.com/
