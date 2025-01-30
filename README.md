@@ -43,4 +43,7 @@ $ heroku create CUSTOM-APP-NAME
 ```
 $ git push heroku main
 ```
-
+4. Open heroku app
+```
+$ heroku open
+```
