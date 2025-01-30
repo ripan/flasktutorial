@@ -41,7 +41,7 @@ $ heroku create CUSTOM-APP-NAME
 ```
 3. Push the Git repository to this remote to trigger the building and deployment process
 ```
-$ git push heroku master
+$ git push heroku main
 ```
 
 Demo Link: https://flasktutorial-20012025-cfee3b8505e8.herokuapp.com/
