@@ -44,4 +44,3 @@ $ heroku create CUSTOM-APP-NAME
 $ git push heroku main
 ```
 
-Demo Link: https://flasktutorial-20012025-cfee3b8505e8.herokuapp.com/
